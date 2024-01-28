@@ -76,7 +76,9 @@ figcaption {
     text-align: center;
 }
 
-
+table {
+    margin: 0 auto;
+}
 
 .employee-table th, .employee-table td {
     border: 1px solid #00a2ff; 
