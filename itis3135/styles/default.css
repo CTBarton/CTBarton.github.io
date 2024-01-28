@@ -74,3 +74,11 @@ figure {
 figcaption {
     font-style: italic;
 }
+
+
+
+.employee-table th, .employee-table td {
+    border: 1px solid #00a2ff; 
+    padding: 8px; 
+    border-collapse: collapse;
+}
