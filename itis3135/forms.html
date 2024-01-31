@@ -26,35 +26,41 @@
         <form action="#">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Ex. Jane Doe" pattern="[A-Za-z ]+" required>
-    
+        
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" placeholder="Ex. 012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-    
+        
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" placeholder="Ex. JaneDoe@Example.com" required>
-    
+        
             <label for="selection">Please Select All That Apply:</label>
-                <label>
-            <input type="checkbox" id="selection1" name="selection1"> Recently Graduated </label>
-                <label>
-            <input type="checkbox" id="selection2" name="selection2"> Have Prior Field Experience </label>
-                <label>
-                <input type="checkbox" id="selection3" name="selection3"> Were previously Employeed For Five Years or More </label>
-    
-            <label for="gender">What is Your Gender:</label>
-                    <label>
-            <input type="radio" id="gender" name="gender" value="male"> Male</label>
-                        <label>
-            <input type="radio" id="gender" name="gender" value="female"> Female</label>
-    
+            <label>
+                <input type="checkbox" id="selection1" name="selection1"> Recently Graduated
+            </label>
+            <label>
+                <input type="checkbox" id="selection2" name="selection2"> Have Prior Field Experience
+            </label>
+            <label>
+                <input type="checkbox" id="selection3" name="selection3"> Were previously Employeed For Five Years or More
+            </label>
+        
+            <label>What is Your Gender:</label>
+            <label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </label>
+        
             <label for="department">Which Department Are You Applying For?:</label>
             <select id="department" name="department">
-                <option value="blank" label=""></option>
+                <option value="blank">Select One Below:</option>
                 <option value="sales">Sales</option>
                 <option value="marketing">Marketing</option>
                 <option value="development">Development</option>
                 <option value="operations">Operations</option>
             </select>
+            
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
