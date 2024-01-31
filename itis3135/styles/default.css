@@ -90,6 +90,11 @@ form {
     margin-top: 20px;
 }
 
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
 input[type="text"],
 input[type="tel"],
 input[type="email"],
