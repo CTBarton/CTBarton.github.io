@@ -16,52 +16,69 @@
                 <li><a href="./introduction.html">Introduction</a></li>
                 <li><a href="./contract.html">Contract</a></li>
                 <li><a href="./tables.html">Tables</a></li>
+                <li><a href="./forms.html">Form</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>HTML Forms</h2>
+        <h2>Department Application</h2>
         <form action="#">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-    
+            <input type="text" id="name" name="name" placeholder="Ex. Jane Doe" pattern="[A-Za-z ]+" required>
+        
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-    
+            <input type="tel" id="phone" name="phone" placeholder="Ex. 012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="interests">Interests:</label>
-            <input type="checkbox" id="interest1" name="interest1">
-            <label for="interest1">Interest 1</label>
-            <input type="checkbox" id="interest2" name="interest2">
-            <label for="interest2">Interest 2</label>
-    
-            <label for="gender">Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-    
-            <label for="department">Department:</label>
+            <input type="email" id="email" name="email" placeholder="Ex. JaneDoe@Example.com" required>
+        
+            <label for="selection1">Please Select All That Apply:</label>
+                <label>
+            <input type="checkbox" id="selection1" name="selection1"> Recently Graduated
+                </label>
+                <label>
+            <input type="checkbox" id="selection2" name="selection2"> Have Prior Field Experience
+                </label>
+                <label>
+            <input type="checkbox" id="selection3" name="selection3"> Were previously Employed For Five Years or More
+                </label>
+            <label for="male">What is Your Gender:</label>
+            <label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </label>
+        
+            <label for="department">Which Department Are You Applying For?:</label>
             <select id="department" name="department">
-                <option value="blank"></option>
+                <option value="blank">Select One Below:</option>
                 <option value="sales">Sales</option>
                 <option value="marketing">Marketing</option>
                 <option value="development">Development</option>
                 <option value="operations">Operations</option>
             </select>
-    
+            
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
     </main>
     
     <footer>
-       <ul>
-            <li>Designed by <a href="./bartondynamics.net/">Barton Dynamics</a> &copy; 2024</li>
+        <ul>
+            <li><a href="https://webpages.charlotte.edu/cbarto13/itis3135/">UNCC Home</a></li>
+                <li><a href="https://github.com/CTBarton">GitHub</a></li>
+                <li><a href="https://ctbarton.github.io/">GitHub.io</a></li>
+                <li><a href="https://ctbarton.github.io/itis3135/">ITIS 3135 GitHub.io</a></li>
+                <li><a href="https://www.freecodecamp.org/CTBarton">FreeCodeCamp</a></li>
+                <li><a href="https://www.codecademy.com/profiles/CTBarton">Codecademy</a></li>
+                <li><a href="https://www.linkedin.com/in/cameron-barton-4995582aa/">LinkedIn</a></li>
+    
+            </ul>
+        <ul><li>Designed by <a href="./bartondynamics.net/">Barton Dynamics</a> &copy; 2024</li>
         </ul>
+        
         <div>
             <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
                 <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
