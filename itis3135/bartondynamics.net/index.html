@@ -18,6 +18,14 @@
             color: #fff;
             padding: 1rem;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        header h1, p {
+            margin: 10px;
         }
 
         main {
@@ -33,23 +41,66 @@
             bottom: 0;
             width: 100%;
         }
+        ul {
+            list-style: square;
+        }
+         a:link, a:visited {
+         color: #1ecf94; 
+        }
+
+        a:hover, a:active {
+        color: #0a4936; 
+        }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="../images/170550859_padded_logo.png" alt="Company Logo" width="300" height="150">
         <h1>Barton Dynamics</h1>
         <p>Empowering Tomorrow through Innovative Solutions</p>
     </header>
 
     <main>
-        <h2>Welcome to Barton Dynamics!</h2>
-        <p>We provide innovative solutions for your business needs.</p>
+        <h2>Barton Dynamic's Services</h2>
+        <p>Established in early 2020, Barton Dynamics stands as a premier web design and consulting firm, 
+            dedicated to transforming businesses through innovative digital solutions. Our team of expert designers and consultants brings a wealth of 
+            experience and creativity to every project. We specialize in delivering cutting-edge web solutions tailored to meet the 
+            unique needs of each client.</p>
+        <ul>
+            <li>Founded by web designers for web designers.</li>
+            <li>6 Best Webpage Design Awards.</li>
+            <li>Team of highly dedicated and experienced designers.</li>
+            <li>We donate 20% of our profits to charity!</li>
+            <li>We strive to be an eco-friendly company.</li>
+        </ul>
+        <p>At Barton Dynamics, we are committed to delivering exceptional web design and consulting services to help your business 
+            thrive in the digital landscape. Whether you're looking to revamp your website, optimize your online presence, 
+            or enhance your digital marketing strategies, we're here to assist you every step of the way.</p>
+
+            <div>
+                <p><strong>Contact Us:</strong></p>
+                <p>Email: contact@bartondynamics.net</p>
+                <p>Phone: +1 (704) 947-1057</p>
+                <p>Address: 405 S Davidson St, Charlotte NC, United States</p>
+            </div>
+
     </main>
 
     <footer>
         <p>&copy; 2024 <a href="../bartondynamics.net/">Barton Dynamics</a></p>
+        <div>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+        </div>
     </footer>
-
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>
