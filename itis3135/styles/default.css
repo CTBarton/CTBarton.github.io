@@ -121,3 +121,11 @@ button[type="reset"]:hover,
 button[type="submit"]:hover {
     background-color: #555;
 }
+
+a:link, a:visited {
+    color: #FFA500; 
+}
+
+a:hover, a:active {
+    color: #CC5500; 
+}
