@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameron Barton's Casual Badger || ITIS 3135 || Website Evaluations</title>
+    <title>Cameron Barton's Casual Badger || ITIS 3135 || Calculator</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -32,44 +32,29 @@
     </header>
 
     <main>
-        <h2>Website Evaluations</h2>
-
-        <section>
-            <h3><a href="https://www.nasa.gov/">NASA</a></h3>
-            <p>NASA's website with different news stories related to space linked. 
-                Also has different clickable links to other areas of the website.
-            </p>
-            <ul>
-                <li>Contrast</li>
-                <li>Repetition</li>
-                <li>Alignment</li>
-                <li>Proximity</li>
-            </ul>
-            <p>NASA's default webpage follows the CRAP principles. They use different size
-                font for more important information/less important info. They have a nice
-            bright and dark alternating pattern for their content and things are aligned
-        and close to one another. </p>
-        </section>
-    
-        <section>
-            <h3><a href="https://apnews.com/">AP News</a></h3>
-            <p>A news website for the associated press.</p>
-            <ul>
-                <li>Contrast</li>
-                <li>Repetition</li>
-                <li>Alignment</li>
-                <li>Proximity</li>
-            </ul>
-            <p>This website in my opinion doesn't follow the CRAP principles very well. There isn't a lot of color
-                in the website, the page being mostly white with different headings being different sizes and sometimes
-                different fonts. So there is no real repitition of elements. Elements are also not consistantly aligned,
-                having to move your eyes from the far-right side of the screen, to the far-left, then back to the middle.
-                The only thing the website follows is proximity, but it is to the extreme, with things being so close together
-                it's sometimes hard to distinguish different articles from one another.
-
-            </p>
-        </section>
-
+        <h2>Calculator</h2>
+        <div class="calculator">
+            <input type="text" id="result">
+            <div class="buttons">
+                <button onclick="addNumber('7')">7</button>
+                <button onclick="addNumber('8')">8</button>
+                <button onclick="addNumber('9')">9</button>
+                <button onclick="addOperator('+')">+</button>
+                <button onclick="addNumber('4')">4</button>
+                <button onclick="addNumber('5')">5</button>
+                <button onclick="addNumber('6')">6</button>
+                <button onclick="addOperator('-')">-</button>
+                <button onclick="addNumber('1')">1</button>
+                <button onclick="addNumber('2')">2</button>
+                <button onclick="addNumber('3')">3</button>
+                <button onclick="addOperator('*')">*</button>
+                <button onclick="addNumber('0')">0</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearInput()">Clear</button>
+                <button onclick="addOperator('÷')">÷</button>
+            </div>
+        </div>
+       
     </main>
     
     <footer>
@@ -99,5 +84,6 @@
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
+    <script src = "scripts/calculator_try.js"></script>
 </body>
 </html>
