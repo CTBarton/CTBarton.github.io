@@ -1,27 +1,27 @@
-let currentInput = '';
+let currInput = '';
 
 function addNumber(num) {
-    currentInput += num;
-    updateDisplay(currentInput);
+    currInput += num;
+    updateDisplay(currInput);
 }
 
 function addOperator(operator) {
-    currentInput += operator;
-    updateDisplay(currentInput);
+    currInput += operator;
+    updateDisplay(currInput);
 }
 
 function calculate() {
     try {
-        const result = eval(currentInput);
+        const result = eval(currInput);
         updateDisplay(result);
-        currentInput = result;
+        currInput = result;
     } catch (error) {
         updateDisplay('Error');
     }
 }
 
 function clearInput() {
-    currentInput = '';
+    currInput = '';
     updateDisplay('');
 }
 
