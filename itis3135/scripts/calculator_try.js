@@ -1,5 +1,14 @@
 let currInput = '';
 
+function clearInput() {
+    currInput = '';
+    updateDisplay('');
+}
+
+function updateDisplay(value) {
+    document.getElementById('result').value = value;
+}
+
 function addNumber(num) {
     currInput += num;
     updateDisplay(currInput);
@@ -20,13 +29,5 @@ function calculate() {
     }
 }
 
-function clearInput() {
-    currInput = '';
-    updateDisplay('');
-}
-
-function updateDisplay(value) {
-    document.getElementById('result').value = value;
-}
 
 
