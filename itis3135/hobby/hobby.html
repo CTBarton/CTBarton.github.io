@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Barton's Casual Badger || ITIS 3135 || Hobby</title>
+    <style>
+        /* Add CSS Here */
+        section {
+            display: none; /* Hide all sections by default */
+        }
+
+        section.active {
+            display: block; /* Display the active section */
+        }
+
+        /* TEST CSS HERE */
+ /* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section figure {
+    margin-bottom: 10px;
+}
+
+section figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+section table th,
+section table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+section table caption {
+    font-style: italic;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Car Photography</h1>  
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('section1')">Home</a></li>
+                <li><a href="#" onclick="showSection('section2')">About Me</a></li>
+                <li><a href="#" onclick="showSection('section3')">When</a></li>
+                <li><a href="#" onclick="showSection('section4')">Where</a></li>
+                <li><a href="#" onclick="showSection('section5')">How</a></li>
+                <li><a href="#" onclick="showSection('section6')">Why</a></li>
+                <li><a href="#" onclick="showSection('section7')">AI Prompts</a></li>
+            </ul>
+        </nav>   
+    </header>
+
+    <main>
+        <section id = "section2">
+            <h2>About Me</h2>
+            <h3>My Personal Introduction to Car Photography</h3>
+            <p>For a little background of me and how I got into this hobby, ever since I was a kid I have always been fascinated by cars.
+                Growing up my dad and his friends always had awesome and modified cars or motorcycles. We would watch TV shows about cars and
+                build scale models of cars. During the covid pandemic while I was sitting at home most days with nothing to do, 
+                I decided to take up photography and to be more specific, car photography. So on Christmas of 2020 I got myself a brand 
+                new camera and I took off my journey from there.
+            </p>
+
+            <figure>
+                <img src = "images/IMG_9683.JPG" alt ="Picture of Car" width = "612" height = "408">
+                <figcaption><i>Picture of my personal car on a cloudy day</i></figcaption>
+            </figure>
+
+            <p>Through my passion for cars, I made many new friends. I started being more social, going to events, meetups, and other things
+                of that nature. The other nice thing about photography is you're always looking for that perfect shot. In doing so, you find 
+                yourself exploring different areas and coming across places you might not know existed. 
+            </p>
+
+        </section>
+
+        <section id = "section1" class = "active">
+            <h2>Home</h2>
+            <h3>About Car Photography</h3>
+            <p>Car photography is a exciting and creative art form. Car photographers often have to discover unique locations to make their photos stand out from the rest. There are
+                possibly hundreds of millions of professional and amateur photographers in the world and everyone wants to leave their own mark. You have to find a balance when taking these 
+                photos. From finding the perfect background, having good lighting, and overall knowing your own camera and its capabilities.
+                 It's also a very friendly and welcoming hobby to have. People do not have issues with helping others
+                learn how to become better photographers. 
+            </p>
+
+            <figure>
+            <img src = "images/AICarPhotography.jpg" alt = "AI Image Of Photographer" width = "512" height ="512">
+            <figcaption><i>AI Image of a Car Photographer at a Car Meet</i></figcaption>
+            <p><i>Prompt used for image creation: "photorealistic picture of a photographer taking photos of cars at a large car meet, sunny, no text, hyperrealistic"
+                AI Used: DALL-E </i></p>
+        </figure>
+        
+        <p>As I mentioned earlier, the entire community is very welcoming. People often will share tips and tricks they have found or learned to capture better photos.
+            If it's something you're interested in, you can even start a social media page where you document your photography journey. If you have a passion for cars and a keen eye, 
+            car photography might be something you're interested in. This webpage will talk more in depth about car photography and maybe it'll make you realize it's a hobby you want to try for yourself.
+        </p>
+           </section>
+
+        <section id = "section3">
+            <h2>When</h2>
+            <h3>When is the best time to take photos?</h3>
+            <p>The best times to take photos varies. The weather such as if its cloudy or sunny, windy or calm can all impact the feeling of your photo. Another
+                big thing to consider is the color of the car you're taking a photo of. Is the car a bright, neutral, or dark color? These are all things you need to keep
+                in the back of your mind as a car photographer. Just as an example I will show two pictures in very different conditions.
+            </p>
+
+            <figure>
+                <img src = "images/IMG_0441.JPG" alt = "Motorcycle at night in low light" width = "612" height = "408">
+                <figcaption><i>Motorcycle in low light conditions</i></figcaption>
+                <p>In this photo, it was very low light. It was dark outside in the middle of the night. There was no natural light and the only light i had available to me 
+                    was a street lamp right above my head. Now you have to ask yourself, what feeling does this picture impose? Does the low light make it mysterious?
+                </p>
+                <img src = "images/IMG_0209.JPG" alt = "Two cars in sunlight" width = "612" height = "408">
+                <figcaption><i>Two Cars in Sunlight</i></figcaption>
+                <p>Now for this next picture, it's very different than the first. In this picture it's sunny outside with light coming in from every
+                    angle the camera is pointing. Now this picture doesn't have the same feeling as the first. It doesn't feel mysterious, you can see the car perfectly and all
+                    the details around it.
+                 </p>
+            </figure>
+
+            <p>
+                I used these two photos as an example because I think it highlights when it's good to take photos. It all depends what you want the viewer to feel when they
+                see the photo. You might see a really cool car and want to show it off. In that case it's better if it's sunny outside and bright. That way you can highlight all
+                the small details on the car that you wouldn't be able to see in a darker photo.
+            </p>
+            
+        </section>
+
+        <section id = "section4">
+            <h2>Where</h2>
+            <h3>Where Do I Find Cars to Photograph?</h3>
+            <p>There are many different ways to find cars to photograph. Firstly you can start by photographing your own
+                car like I did. It takes some time to get good at it, but if you keep learning you will become a pro in no time.
+                In Charlotte specifically, since it is a large city, there's a bunch of events that are always going on that you can go to and practice.
+            </p>
+
+            <figure>
+            <img src = "images/IMG_0507.JPG" alt ="Personal Photo of Mustang" width = "612" height = "408">
+            <figcaption><i>Photo I took at a local drag racing strip</i></figcaption>
+        </figure>
+
+        <p>Most people in the car community are very friendly. You can usually find information on car meets on
+            popular social media sites like Instagram or Snapchat. Another option I found is to find a local drag strip
+            or something similar and see when they host events. If you live close to Mooresville NC, there is a local
+            drag strip there that hosts events on the weekends.
+        </p>
+            
+        </section>
+
+        <section id = "section5">
+            <h2>How</h2>
+            <h3>How Do I Get Started?</h3>
+            <p>If you are interested in this hobby but you don't know how to get started, let this be a sort of guide. If you are a true beginner
+                you don't need much to get started in this hobby. If you don't have the funds for a camera, you can use your phone! Many 
+                modern phones have extremely good cameras and if you're just starting out, this is a good choice as you won't need hundreds
+                of dollars in camera equipment and you can practice and learn how to take better photos. Below is a table detailing the most popular
+                phones in 2023 and their camera specifications.
+            </p>
+            
+            <table>
+                <caption>Most Popular Phones in 2023</caption>
+                <caption><a href="https://www.forbes.com/sites/johnkoetsier/2023/08/29/top-10-selling-smartphones-all-from-2-companies-apple-and-samsung/?sh=441b9f2857d1">Source For Information</a></caption>
+                <tr>
+                    <th>Phone Name</th>
+                    <th>Camera Specification</th>
+                </tr>
+                <tr>
+                    <td>Apple iPhone 14 Pro Max</td>
+                    <td>48 Mega Pixels</td>             
+                </tr>
+                <tr>
+                    <td>Apple iPhone 14 Pro</td>
+                    <td>48 Mega Pixels</td>                 
+                </tr>
+                <tr>
+                    <td>Apple iPhone 14</td>
+                    <td>12 Mega Pixels</td>                 
+                </tr>
+                <tr>
+                    <td>Apple iPhone 13</td>
+                    <td>12 Mega Pixels</td>                  
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy A14</td>
+                    <td>50 Mega Pixels</td>                   
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy S23 Ultra</td>
+                    <td>200 Mega Pixels</td>                   
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy A14 5G</td>
+                    <td>12 Mega Pixels</td>                  
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy A54 5G</td>
+                    <td>50 Mega Pixels</td>                   
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy A34 5G</td>
+                    <td>48 Mega Pixels</td>    
+                </tr>
+                <tr>
+                    <td>Apple iPhone 11</td>
+                    <td>12 Mega Pixels</td>
+                </tr>
+            </table>
+
+            <p>To help put the table into perspective, my camera, a Cannon EOS Rebel SL3 has a 24.1 mega pixel sensor and it costs around $650.00.
+                 If you have a modern phone chances are you have a camera that is either half the quality of a standard handheld camera, or 
+                 you have a camera that surpases it. To reiterate, if you do not have the extra funds to buy a camera, BUT you have a phone, 
+                 it is a great starting block to get into photography. 
+            </p>
+
+            <figure>
+                <img src = "images/IMG_2245.JPG" alt = "Photo of my personal camera" width ="604" height = "806">
+                <figcaption><i>My personal camera, a Cannon EOS Rebel SL3</i></figcaption>
+            </figure>
+        </section>
+
+        <section id = "section6">
+            <h2>Why</h2>
+            <h3>Why Do I Enjoy It?</h3>
+            <p>One of the reasons I enjoy photograhpy so much is that it's relaxing. When I'm taking photos, I'm not worried
+                about anything else thats going on around me besides what's being seen through my camera. Much like how 
+                some people may take a walk to relax, as it provides some peace and alone time, car photograhpy for me is much the same.
+            </p>
+
+            <figure>
+                <img src = "images/IMG_0051.JPG" alt = "Picture of car tail light" width = "612" height = "408">
+                <figcaption><i>Personal photo of the rear of my car</i></figcaption>
+            </figure>
+
+            <p>Car photography also doesn't have to be just a hobby. When a company needs to advertise their new car
+                what do they do? They take pictures or videos of it. Photography also can capture that sense of beauty in something.
+                It can make people think about the craftsmenship and how many hours were spent in the drawing room designing a car.
+                Car Photography is also one of those hobbies where if you practice enough and you love it, you can very much make
+                a living out of it.
+            </p>
+            
+        </section>
+
+        <section id = "section7">
+            <h2>AI Prompts</h2>
+            <p>This is the content of section 2</p>
+        </section>
+    
+    <footer>
+        
+        <ul><li>Designed by <a href="./bartondynamics.net/">Barton Dynamics</a> &copy; 2024</li>
+        </ul>
+        <p><strong><em>Soaring Above Expectations</em></strong></p>
+        <div>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+
+            <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAME" target="_blank">
+                <img src="images/button_validation_wcag.png" alt="Disability Tool">
+            </a>
+
+        </div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src = "scripts/hobby.js"></script>
+</body>
+</html>
