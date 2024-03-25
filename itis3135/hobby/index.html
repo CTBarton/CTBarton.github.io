@@ -5,164 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cameron Barton's Casual Badger || ITIS 3135 || Hobby</title>
     <style>
-        /* Add CSS Here */
+       
         section {
-            display: none; /* Hide all sections by default */
+            display: none; 
         }
 
         section.active {
-            display: block; /* Display the active section */
+            display: block; 
         }
 
-        /* TEST CSS HERE */
- /* Resetting default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:  #7553d4;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
-    color: #333;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid #EAD2AC;
+        }
 
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        th, td {
+            border: 2px solid #EAD2AC; 
+            padding: 8px; 
+        }
 
-header h1 {
-    font-size: 2em;
-}
+        header {
+            background-color: #EAD2AC;
+            padding: 10px;
+            text-align: center;
+            color: #064446;
+        }
 
-/* Navigation styles */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
 
-nav ul li {
-    margin: 0 10px;
-}
+        nav a, a {
+            text-decoration: none;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
+        main {
+            padding: 20px;
+            max-width: 1200px; 
+            width: 85%;
+            margin: 0 auto; 
+        }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
+        footer {
+            background-color: #EAD2AC;
+            padding: 20px;
+            text-align: center;
+            color: #064446;
+        }
 
-/* Main styles */
-main {
-    padding: 20px;
-}
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-/* Section styles */
-section {
-    margin-bottom: 20px;
-}
+        footer ul li {
+            margin-bottom: 10px;
+        }
 
-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
+        footer a {
+            text-decoration: none;
+        }
 
-section h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
+        figure, figcaption {
+            text-align: center;
+        }
 
-section p {
-    margin-bottom: 10px;
-}
+        table {
+            margin: 0 auto;
+        }
 
-section figure {
-    margin-bottom: 10px;
-}
+        a:link, a:visited {
+            color: #064446; 
+        }
 
-section figure img {
-    max-width: 100%;
-    height: auto;
-}
+        a:hover, a:active {
+            color: rgb(103, 77, 180); 
+        }
 
-section table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-}
-
-section table th,
-section table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-}
-
-section table caption {
-    font-style: italic;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Button styles */
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
+        button { 
+            cursor: pointer;
+        }
 
     </style>
 </head>
 <body>
-
     <header>
         <h1>Car Photography</h1>  
         <nav>
             <ul>
-                <li><a href="#" onclick="showSection('section1')">Home</a></li>
-                <li><a href="#" onclick="showSection('section2')">About Me</a></li>
-                <li><a href="#" onclick="showSection('section3')">When</a></li>
-                <li><a href="#" onclick="showSection('section4')">Where</a></li>
-                <li><a href="#" onclick="showSection('section5')">How</a></li>
-                <li><a href="#" onclick="showSection('section6')">Why</a></li>
+                <li><a href="#" onclick="showSection('section1')">Home 🚗</a></li>
+                <li><a href="#" onclick="showSection('section2')">About Me 🚗</a></li>
+                <li><a href="#" onclick="showSection('section3')">When 🚗</a></li>
+                <li><a href="#" onclick="showSection('section4')">Where 🚗</a></li>
+                <li><a href="#" onclick="showSection('section5')">How 🚗</a></li>
+                <li><a href="#" onclick="showSection('section6')">Why 🚗</a></li>
                 <li><a href="#" onclick="showSection('section7')">AI Prompts</a></li>
             </ul>
         </nav>   
@@ -186,12 +133,13 @@ button:hover {
 
             <p>Through my passion for cars, I made many new friends. I started being more social, going to events, meetups, and other things
                 of that nature. The other nice thing about photography is you're always looking for that perfect shot. In doing so, you find 
-                yourself exploring different areas and coming across places you might not know existed. 
+                yourself exploring different areas and coming across places you might not know existed. It's very calming in that regard. Spending hours on a sunny day trying to
+                find a good spot to take photos.
             </p>
 
         </section>
 
-        <section id = "section1" class = "active">
+        <section id = "section1">
             <h2>Home</h2>
             <h3>About Car Photography</h3>
             <p>Car photography is a exciting and creative art form. Car photographers often have to discover unique locations to make their photos stand out from the rest. There are
@@ -204,9 +152,9 @@ button:hover {
             <figure>
             <img src = "images/AICarPhotography.jpg" alt = "AI Image Of Photographer" width = "512" height ="512">
             <figcaption><i>AI Image of a Car Photographer at a Car Meet</i></figcaption>
-            <p><i>Prompt used for image creation: "photorealistic picture of a photographer taking photos of cars at a large car meet, sunny, no text, hyperrealistic"
-                AI Used: DALL-E </i></p>
         </figure>
+        <p><i>Prompt used for image creation: "photorealistic picture of a photographer taking photos of cars at a large car meet, sunny, no text, hyperrealistic"
+            AI Used: DALL-E </i></p>
         
         <p>As I mentioned earlier, the entire community is very welcoming. People often will share tips and tricks they have found or learned to capture better photos.
             If it's something you're interested in, you can even start a social media page where you document your photography journey. If you have a passion for cars and a keen eye, 
@@ -225,16 +173,19 @@ button:hover {
             <figure>
                 <img src = "images/IMG_0441.JPG" alt = "Motorcycle at night in low light" width = "612" height = "408">
                 <figcaption><i>Motorcycle in low light conditions</i></figcaption>
+            </figure>
                 <p>In this photo, it was very low light. It was dark outside in the middle of the night. There was no natural light and the only light i had available to me 
                     was a street lamp right above my head. Now you have to ask yourself, what feeling does this picture impose? Does the low light make it mysterious?
                 </p>
+            <figure>
                 <img src = "images/IMG_0209.JPG" alt = "Two cars in sunlight" width = "612" height = "408">
                 <figcaption><i>Two Cars in Sunlight</i></figcaption>
+            </figure>
                 <p>Now for this next picture, it's very different than the first. In this picture it's sunny outside with light coming in from every
                     angle the camera is pointing. Now this picture doesn't have the same feeling as the first. It doesn't feel mysterious, you can see the car perfectly and all
                     the details around it.
                  </p>
-            </figure>
+           
 
             <p>
                 I used these two photos as an example because I think it highlights when it's good to take photos. It all depends what you want the viewer to feel when they
@@ -249,7 +200,10 @@ button:hover {
             <h3>Where Do I Find Cars to Photograph?</h3>
             <p>There are many different ways to find cars to photograph. Firstly you can start by photographing your own
                 car like I did. It takes some time to get good at it, but if you keep learning you will become a pro in no time.
-                In Charlotte specifically, since it is a large city, there's a bunch of events that are always going on that you can go to and practice.
+                In Charlotte specifically, since it is a large city, there's a bunch of events that are always going on that you can go to and practice. You might ask
+                yourself specifically where do I take my pictures? The answer to that is you can pretty much take pictures anywhere! After all the setting of a picture matters the 
+                most to you. If you think a certain setting is good for a picture, then it's okay! You also have to explore a little bit. Take time to find some hidden spots 
+                that would make for good pictures. 
             </p>
 
             <figure>
@@ -260,7 +214,8 @@ button:hover {
         <p>Most people in the car community are very friendly. You can usually find information on car meets on
             popular social media sites like Instagram or Snapchat. Another option I found is to find a local drag strip
             or something similar and see when they host events. If you live close to Mooresville NC, there is a local
-            drag strip there that hosts events on the weekends.
+            drag strip there that hosts events on the weekends. All of these are good tools to use when looking for events. You also might not need to even go to an event. If you 
+            live in a large city for example, chances are you can walk downtown and see cars you don't usually see.
         </p>
             
         </section>
@@ -276,8 +231,8 @@ button:hover {
             </p>
             
             <table>
-                <caption>Most Popular Phones in 2023</caption>
-                <caption><a href="https://www.forbes.com/sites/johnkoetsier/2023/08/29/top-10-selling-smartphones-all-from-2-companies-apple-and-samsung/?sh=441b9f2857d1">Source For Information</a></caption>
+                <caption>Most Popular Phones in 2023
+            </caption>
                 <tr>
                     <th>Phone Name</th>
                     <th>Camera Specification</th>
@@ -341,7 +296,9 @@ button:hover {
             <h3>Why Do I Enjoy It?</h3>
             <p>One of the reasons I enjoy photograhpy so much is that it's relaxing. When I'm taking photos, I'm not worried
                 about anything else thats going on around me besides what's being seen through my camera. Much like how 
-                some people may take a walk to relax, as it provides some peace and alone time, car photograhpy for me is much the same.
+                some people may take a walk to relax, as it provides some peace and alone time, car photograhpy for me is much the same. It also gives me something to do on my
+                free time. I usually have a bunch of downtime on my days off from work and I'm not one to like just sitting around. So getting into car photography allows me to
+                get out of the house and do something I love and enjoy.
             </p>
 
             <figure>
@@ -352,7 +309,7 @@ button:hover {
             <p>Car photography also doesn't have to be just a hobby. When a company needs to advertise their new car
                 what do they do? They take pictures or videos of it. Photography also can capture that sense of beauty in something.
                 It can make people think about the craftsmenship and how many hours were spent in the drawing room designing a car.
-                Car Photography is also one of those hobbies where if you practice enough and you love it, you can very much make
+                Car photography is also one of those hobbies where if you practice enough and you love it, you can very much make
                 a living out of it.
             </p>
             
@@ -360,12 +317,17 @@ button:hover {
 
         <section id = "section7">
             <h2>AI Prompts</h2>
-            <p>This is the content of section 2</p>
+            <p>I used ChatGPT to help me in certain areas of this assignment. Here are the prompts I have used:</p>
+            <ul>
+                <li>How to hide a section in HTML based on what you have clicked.</li>
+                <li>What are some color schemes that follow the CRAP principles?</li>
+                <li>What are some contrasting colors for the following hex codes: #7553d4, #EAD2AC </li>
+            </ul>
         </section>
-    
+    </main>
     <footer>
         
-        <ul><li>Designed by <a href="./bartondynamics.net/">Barton Dynamics</a> &copy; 2024</li>
+        <ul><li>Designed by <a href="../bartondynamics.net/">Barton Dynamics</a> &copy; 2024</li>
         </ul>
         <p><strong><em>Soaring Above Expectations</em></strong></p>
         <div>
@@ -376,8 +338,8 @@ button:hover {
                 <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
             </a>
 
-            <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/hobby">
-                <img src="images/button_validation_wcag.png" alt="Disability Tool">
+            <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/cbarto13/itis3135/hobby/hobby.html">
+                <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="Disability Tool">
             </a>
 
         </div>
