@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameron Barton's Casual Badger || ITIS 3135 || Forms</title>
+    <title>Cameron Barton's Casual Badger || ITIS 3135 || Drawing</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </head>
@@ -35,47 +35,8 @@
     </header>
 
     <main>
-        <h2>Department Application</h2>
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Ex. Jane Doe" pattern="[A-Za-z ]+" required>
+        <h2>Interactive Drawing with p5.js</h2>
         
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Ex. 012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-        
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Ex. JaneDoe@Example.com" required>
-        
-            <label for="selection1">Please Select All That Apply:</label>
-                <label>
-            <input type="checkbox" id="selection1" name="selection1"> Recently Graduated
-                </label>
-                <label>
-            <input type="checkbox" id="selection2" name="selection2"> Have Prior Field Experience
-                </label>
-                <label>
-            <input type="checkbox" id="selection3" name="selection3"> Were previously Employed For Five Years or More
-                </label>
-            <label for="male">What is Your Gender:</label>
-            <label>
-                <input type="radio" id="male" name="gender" value="male"> Male
-            </label>
-            <label>
-                <input type="radio" id="female" name="gender" value="female"> Female
-            </label>
-        
-            <label for="department">Which Department Are You Applying For?:</label>
-            <select id="department" name="department">
-                <option value="blank">Select One Below:</option>
-                <option value="sales">Sales</option>
-                <option value="marketing">Marketing</option>
-                <option value="development">Development</option>
-                <option value="operations">Operations</option>
-            </select>
-            
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-        </form>
     </main>
     
     <footer>
@@ -89,7 +50,7 @@
                 <li><a href="https://www.linkedin.com/in/cameron-barton-4995582aa/">LinkedIn</a></li>
     
             </ul>
-        <ul><li>Designed by <a href="./bartondynamics.net/">Barton Dynamics</a> &copy; 2024</li>
+        <ul><li>Designed by <a href="./bartondynamics.net/">Barton Dynamics</a> &copy; 2024, <a href ="https://www.freecodecamp.org/certification/CTBarton/javascript-algorithms-and-data-structures-v8">Certified in JS.</a></li>
         </ul>
         <p><strong><em>Soaring Above Expectations</em></strong></p>
         <div>
@@ -110,7 +71,8 @@
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
-
     </script>
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+      <script src="scripts/sketch.js"></script>
 </body>
 </html>
