@@ -1,0 +1,218 @@
+/*Basic Styling for all pages */
+
+body {
+    background-color: #0c0c6e;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff7f50;
+    padding: 10px;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100% ;
+}
+
+footer {
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: antiquewhite;
+}
+
+ /* styling to make the logo sit on the right side of the page*/
+.header img {                  
+    float: right;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .header h1, .header p {
+    position: relative;
+    text-align: center;
+    top: 5px;
+    left: 10px;
+  }
+
+  .header p {
+    margin-bottom: 5px;
+  }
+
+/* styling for the nav bar */
+  nav ul li {                   
+    display: inline;
+}
+
+/* styling to make the nav bar centered*/
+header nav {                   
+    text-align: center;
+    
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for Images at bottom of pages */
+.image-container {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 20px; 
+}
+
+.image {
+    width: 400px; 
+    height: auto; 
+}
+
+/* Styling for form */
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="message"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#message {
+    width: 100%;
+}
+
+button[type="reset"],
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"]:hover,
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Gallery Styling code inspired from W3 Schools "How to create a slideshow" */
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+    width: 50px;
+    height: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
