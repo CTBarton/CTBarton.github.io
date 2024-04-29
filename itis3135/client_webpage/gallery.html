@@ -10,20 +10,7 @@
 <body>
 
     <header>
-        <div class = "header">
-            <img src = "images/clientlogo.png" alt ="Company Logo" width = "302" height = "338">
-        <h1>Detroit Style & Designs</h1>
-        <p>Custom Laser & 3D Designs</p>
-    </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./about.html">About Us</a></li>
-            </ul>
-        </nav>
+        <div data-include="components/header.html"></div>
     </header>
 
     <main>
@@ -58,26 +45,25 @@
         <div class="text">Bigfoot fridge magnet</div>
       </div>
   
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
   </div>
   <br>
   
   <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+  </div> 
     </main>
 
     
     <footer>
-        <p>Designed by <a href="../bartondynamics.net/index.html">Barton Dynamics</a> &copy; 2024, <a href ="https://www.freecodecamp.org/certification/CTBarton/javascript-algorithms-and-data-structures-v8">Certified in JS.</a>
-        </p>
-        <p><strong><em>Soaring Above Expectations</em></strong></p>
+      <div data-include="components/footer.html"></div>
     </footer>
 
     <script src = "./scripts/gallery.js"></script>
+    <script src="./scripts/HTMLInclude.js"></script>
 </body>
 </html>
