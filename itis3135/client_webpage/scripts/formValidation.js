@@ -18,7 +18,7 @@ function validateForm() {
     // Validate phone number format
     var phoneRegex = /^\d{3}[- ]?\d{3}[- ]?\d{4}$/;
     if (!phone.match(phoneRegex)) {
-        alert("Please enter a valid phone number (XXX-XXX-XXXX).");
+        alert("Please enter a valid phone number (XXX-XXX-XXXX) or (XXXXXXXXXX).");
         return false;
     }
 
