@@ -28,19 +28,19 @@ function showSlides(n) {
 } 
 
 
-// Add event listeners to the elements and call the appropriate functions
-document.querySelector(".prev").addEventListener("click", function() {
-  plusSlides(-1);
-});
 
-document.querySelector(".next").addEventListener("click", function() {
-  plusSlides(1);
-});
-
-const dots = document.querySelectorAll(".dot");
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", function() {
-      currentSlide(index + 1);
+  document.querySelector(".prev").addEventListener("click", function() {
+    plusSlides(-1);
   });
-});
+
+  document.querySelector(".next").addEventListener("click", function() {
+    plusSlides(1);
+  });
+
+  const dots = document.querySelectorAll(".dot");
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", function() {
+        currentSlide(index + 1);
+    });
+  });
 
