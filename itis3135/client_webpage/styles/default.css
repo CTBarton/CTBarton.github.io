@@ -3,14 +3,21 @@
 body {
     background-color: #0c0c6e;
     color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  
 }
 
 header {
     background-color: #ff7f50;
     padding: 10px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 main {
@@ -23,6 +30,34 @@ footer {
     background-color: coral;
     padding: 20px;
     text-align: center;
+}
+
+.container {
+  width: 80%; 
+  margin: 0 auto; 
+ 
+}
+
+
+/* Text Alignment */
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+/* Link Colors */
+
+p a {
+  color: coral;
+  text-decoration: none;
 }
 
 nav a {
@@ -38,6 +73,7 @@ footer a {
 
 a:hover, a:active {
     color: antiquewhite;
+    text-decoration: underline;
 }
 
  /* styling to make the logo sit on the right side of the page*/
@@ -48,10 +84,8 @@ a:hover, a:active {
   }
   
   .header h1, .header p {
-    position: relative;
-    text-align: center;
-    top: 5px;
-    left: 10px;
+    text-align: center; 
+    padding-left: 100px;
   }
 
   .header p {
@@ -66,7 +100,7 @@ a:hover, a:active {
 /* styling to make the nav bar centered*/
 header nav {                   
     text-align: center;
-    
+    padding-left: 50px;
 }
 
 footer {
@@ -90,6 +124,9 @@ footer {
 
 form {
     margin-top: 20px;
+    width: 75%;
+    margin-left: 200px;
+    text-align: center;
 }
 
 form label {
